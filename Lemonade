@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Lemonade {
+	public static void main(String[] denckeristhebest){
+  Scanner LemonadeStand = new Scanner (System.in);
+  
+  System.out.println("How much lemonade do you want");
+  int number = LemonadeStand.nextInt();
+  
+  double cost = 1.0;
+  double total = cost * number;
+  
+  if (total < 0) {
+	  System.out.println("Sorry we are out of service");
+  } else { 
+	  System.out.printf("\nYour total is $%.2f", total);
+  }
+	}
+}
